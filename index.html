@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード生成</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img class="logo" src="./images/logo.png" alt="パスワード生成">
+
+    <div class="container-input">
+        <span>サイズ <span id="val"></span> 桁</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+        <button id="button" class="button-cta" onclick="generatePassword()">パスワード生成</button>
+    </div>
+
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title">生成されたパスワード：</span>
+        <span id="password" class="password">1234567890</span>
+        <span class="tooltip">パスワードをクリックしてコピーします。👆</span>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
